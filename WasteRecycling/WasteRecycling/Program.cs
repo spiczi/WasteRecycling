@@ -8,23 +8,23 @@ namespace WasteRecycling
         {
             Dustbin bin = new Dustbin("Green");
             Garbage leftOver = new Garbage("Rotten food");
-            PlasticGarbage bottle = new PlasticGarbage("Soda", true);
+            PlasticGarbage bottle = new PlasticGarbage("Soda", false);
             PaperGarbage box = new PaperGarbage("TV-box", false);
             
-            bin.throwOutGarbage(leftOver);
+            bin.ThrowOutGarbage(leftOver);
             if (!box.Squeezed)
             {
                 box.Squeeze();
             }
-            bin.throwOutGarbage(box);
+            bin.ThrowOutGarbage(box);
             if (!bottle.Clean)
             {
                 bottle.CleanMethod();
             }
-            bin.throwOutGarbage(bottle);
-            bin.displayContents();
-            bin.emptyContents();
-            bin.displayContents();
+            bin.ThrowOutGarbage(bottle);
+            bin.DisplayContents();
+            bin.EmptyContents();
+            bin.DisplayContents();
         }
     }
 }

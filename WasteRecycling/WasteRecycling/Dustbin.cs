@@ -16,7 +16,7 @@ namespace WasteRecycling
             this.color = color;
         }
 
-        public void throwOutGarbage(Garbage garbage)
+        public void ThrowOutGarbage(Garbage garbage)
         {
             if (garbage is PlasticGarbage)
             {
@@ -45,7 +45,7 @@ namespace WasteRecycling
             }
         }
 
-        public void displayContents()
+        public void DisplayContents()
         {
             Console.WriteLine("House waste content: " + house.Count + " item(s)");
             foreach (Garbage garbage in house)
@@ -66,7 +66,7 @@ namespace WasteRecycling
             }
         }
 
-        public void emptyContents()
+        public void EmptyContents()
         {
             house.Clear();
             plastic.Clear();
